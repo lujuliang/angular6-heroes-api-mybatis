@@ -1,0 +1,67 @@
+spring:
+  banner:
+    charset: utf-8
+    image:
+      location: classpath:banner.jpg
+    location: classpath:banner.txt
+  resources:
+    add-mappings: true
+
+api:
+  base-path: /api
+
+cors:
+  allowedOrigins: "*"
+  allowedMethods: GET,POST,DELETE,PUT,OPTIONS
+  allowedHeaders: Origin,X-Requested-With,Content-Type,Accept,Accept-Encoding,Accept-Language,Host,Referer,Connection,User-Agent,Authorization
+
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 7200
+  issuer: ITRunner
+  authentication-path: /auth
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api-docs
+
+management:
+  server:
+    port: 8090
+  endpoints:
+    web:
+      base-path: /actuator
+      exposure:
+        include: health,info
+  endpoint:
+    health:
+      show-details: always
+
+info:
+  app:
+    name: heroes
+    version: 1.0
+
+mybatis:
+  typeAliasesPackage: org.itrunner.heroes.model
+  mapperLocations: classpath:mapper/*.xml
+
+---
+spring:
+  profiles: dev
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: hero
+    password: hero
+    driver-class-name: org.postgresql.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+server:
+  port: 8080
+
+---
+spring:
+  profiles:
+    active: dev
