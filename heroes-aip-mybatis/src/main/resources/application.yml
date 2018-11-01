@@ -17,7 +17,7 @@ cors:
 
 jwt:
   header: Authorization
-  secret: mySecret
+  secret: 0987654321QWERTYUIOPasdfghjklMNB
   expiration: 7200
   issuer: ITRunner
   authentication-path: /auth
