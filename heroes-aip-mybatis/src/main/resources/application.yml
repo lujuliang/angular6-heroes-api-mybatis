@@ -46,20 +46,20 @@ info:
     version: 1.0
 
 mybatis:
-  typeAliasesPackage: org.itrunner.heroes.model
+  typeAliasesPackage: org.itrunner.heroes.dto
   mapperLocations: classpath:mapper/*.xml
 
 ---
 spring:
   profiles: dev
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
-    username: hero
+    url: jdbc:postgresql://localhost:5432/heroes
+    username: postgres
     password: hero
     driver-class-name: org.postgresql.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 server:
-  port: 8080
+  port: 8081
 
 ---
 spring:

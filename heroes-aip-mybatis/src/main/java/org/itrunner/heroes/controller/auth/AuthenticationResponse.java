@@ -1,4 +1,4 @@
-package org.itrunner.heroes.controller;
+package org.itrunner.heroes.controller.auth;
 
 import java.util.Set;
 

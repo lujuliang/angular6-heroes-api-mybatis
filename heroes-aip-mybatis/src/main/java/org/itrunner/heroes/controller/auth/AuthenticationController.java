@@ -1,4 +1,4 @@
-package org.itrunner.heroes.controller;
+package org.itrunner.heroes.controller.auth;
 
 import io.swagger.annotations.Api;
 import org.itrunner.heroes.util.JwtTokenUtil;

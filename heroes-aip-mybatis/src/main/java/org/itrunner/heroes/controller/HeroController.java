@@ -56,14 +56,14 @@ public class HeroController {
 
     @ApiOperation(value = "Add new hero")
     @PostMapping("/heroes")
-    public Hero addHero(@ApiParam(required = true) @RequestBody Hero hero) {
-        return service.saveHero(hero);
+    public void addHero(@ApiParam(required = true) @RequestBody Hero hero) {
+        service.saveHero(hero);
     }
 
     @ApiOperation(value = "Update hero info")
     @PutMapping("/heroes")
-    public Hero updateHero(@ApiParam(required = true) @RequestBody Hero hero) {
-        return service.saveHero(hero);
+    public void updateHero(@ApiParam(required = true) @RequestBody Hero hero) {
+        service.saveHero(hero);
     }
 
     @ApiOperation(value = "Delete hero by id")

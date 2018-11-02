@@ -62,6 +62,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .requestMatchers(EndpointRequest.to(actuatorExposures)).permitAll()
                 .antMatchers(config.getJwt().getAuthenticationPath()).permitAll()
+                .antMatchers("/api/**").permitAll() // delete this line
                 .antMatchers(OPTIONS, "/**").permitAll()
                 .antMatchers(POST, apiPath).hasRole(ROLE_ADMIN)
                 .antMatchers(PUT, apiPath).hasRole(ROLE_ADMIN)

@@ -16,7 +16,7 @@ public final class AuthorityUtil {
     }
 
     public static List<GrantedAuthority> createGrantedAuthorities(List<Authority> authorities) {
-        return authorities.stream().map(authority -> new SimpleGrantedAuthority(authority.getName().name())).collect(Collectors.toList());
+        return authorities.stream().map(authority -> new SimpleGrantedAuthority(authority.getAuthorityName())).collect(Collectors.toList());
     }
 
     public static List<GrantedAuthority> createGrantedAuthorities(String... authorities) {
