@@ -1,4 +1,4 @@
-package org.itrunner.heroes.controller.auth;
+package org.itrunner.heroes.security;
 
 import io.swagger.annotations.ApiModelProperty;
 

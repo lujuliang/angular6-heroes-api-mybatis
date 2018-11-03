@@ -1,7 +1,7 @@
-package org.itrunner.heroes.controller.auth;
+package org.itrunner.heroes.security;
 
 import io.swagger.annotations.Api;
-import org.itrunner.heroes.util.JwtTokenUtil;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

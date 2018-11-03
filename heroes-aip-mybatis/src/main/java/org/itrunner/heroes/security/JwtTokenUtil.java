@@ -1,4 +1,4 @@
-package org.itrunner.heroes.util;
+package org.itrunner.heroes.security;
 
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.JWTVerifier;

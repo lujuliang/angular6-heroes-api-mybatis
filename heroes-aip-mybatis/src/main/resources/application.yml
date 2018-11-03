@@ -55,7 +55,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/heroes
     username: postgres
-    password: hero
+    password: admin
     driver-class-name: org.postgresql.Driver
     type: com.alibaba.druid.pool.DruidDataSource
 server:

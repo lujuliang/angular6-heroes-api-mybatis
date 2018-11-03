@@ -1,6 +1,6 @@
 package org.itrunner.heroes.config;
 
-import org.itrunner.heroes.util.JwtTokenUtil;
+import org.itrunner.heroes.security.JwtTokenUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

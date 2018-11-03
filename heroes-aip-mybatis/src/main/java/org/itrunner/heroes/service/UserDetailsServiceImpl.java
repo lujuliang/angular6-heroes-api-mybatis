@@ -5,12 +5,11 @@ import java.util.stream.Collectors;
 
 import org.itrunner.heroes.dao.AuthorityDao;
 import org.itrunner.heroes.dao.UsersDao;
-import org.itrunner.heroes.dto.AuthorityCriteria;
 import org.itrunner.heroes.dto.UsersCriteria;
 import org.itrunner.heroes.dto.UsersDTO;
 import org.itrunner.heroes.model.Authority;
 import org.itrunner.heroes.model.User;
-import org.itrunner.heroes.util.AuthorityUtil;
+import org.itrunner.heroes.security.AuthorityUtil;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
