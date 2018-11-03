@@ -33,6 +33,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     	if(users.isEmpty()) {
     		throw new UsernameNotFoundException(String.format("No user found with username '%s'.", username));
     	}
+    	
         User user = new User();
         BeanUtils.copyProperties(users.get(0), user);
         List<Authority> authorities = getAuthorites(users.get(0).getId());
